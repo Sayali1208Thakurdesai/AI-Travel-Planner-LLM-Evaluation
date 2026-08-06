@@ -1,1 +1,61 @@
+# BUG-002: Inefficient Transport Recommendation
 
+## Summary
+
+The AI recommended flights even when train or road travel was a more practical option based on distance, travel time and user convenience.
+
+---
+
+## Category
+
+Recommendation Quality
+
+---
+
+## Severity
+
+Medium
+
+---
+
+## Environment
+
+Application: AI Travel Planner
+
+---
+
+## Prompt
+
+Generate the best travel itinerary between two nearby destinations.
+
+---
+
+## Expected Result
+
+The planner should recommend the most suitable mode of transport after considering factors such as travel distance, duration, cost and convenience.
+
+---
+
+## Actual Result
+
+The AI suggested flight options even though train or road travel would have been a more practical and efficient recommendation.
+
+---
+
+## Steps to Reproduce
+
+1. Generate an itinerary between nearby cities.
+2. Review the recommended transport mode.
+3. Compare it with practical alternatives based on distance, travel time and availability.
+
+---
+
+## Impact
+
+The itinerary may increase travel cost, planning effort and overall travel time.
+
+---
+
+## Recommendation
+
+Incorporate distance, travel duration and route suitability into transport selection before recommending flights.
