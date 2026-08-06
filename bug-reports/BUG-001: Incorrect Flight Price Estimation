@@ -1,1 +1,62 @@
 
+# BUG-001: Flight Cost Mismatch
+
+## Summary
+
+The AI Travel Planner returned flight prices that differed significantly from the actual prices available for the same travel dates and route.
+
+---
+
+## Category
+
+Factual Accuracy
+
+---
+
+## Severity
+
+High
+
+---
+
+## Environment
+
+Application: AI Travel Planner
+
+---
+
+## Prompt
+
+Generate a travel itinerary including flight options for the selected origin, destination and travel dates.
+
+---
+
+## Expected Result
+
+The itinerary should display flight prices that accurately reflect the available pricing returned by the integrated travel data source.
+
+---
+
+## Actual Result
+
+The flight price displayed by the AI response was significantly different from the actual flight price available for the same search criteria.
+
+---
+
+## Steps to Reproduce
+
+1. Search for flights using a specific origin, destination and travel date.
+2. Record the flight price shown in the AI itinerary.
+3. Compare it with the price returned by the travel booking provider for the same search.
+
+---
+
+## Impact
+
+Users may make travel decisions based on inaccurate cost estimates, reducing trust in the itinerary.
+
+---
+
+## Recommendation
+
+Ensure flight prices are retrieved from the latest travel data source before generating the final itinerary. Display a disclaimer if prices are subject to change.
